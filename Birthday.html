@@ -1,0 +1,77 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday, My Love</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="main-content">
+    <h1>Happy Birthday, My Love 🎉</h1>
+    <div class="gift" id="gift" onclick="openGift()">🎁</div>
+  </div>
+
+  <div id="fadeOverlay"></div>
+  <div id="boomFlash"></div>
+
+  <div id="postGiftContent">
+    <div class="message-box" id="messageBox">
+      <h2>TO MY BABYGIRL 💖</h2>
+      <p id="typewriterText"></p>
+    </div>
+
+
+    <video id="birthdayVideo" width="240" height="240" autoplay muted loop playsinline>
+      <source src="corc.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>    
+    
+    <div class="gallery" id="gallery">
+      <img src="image1.jpg" alt="March 4, 2023" data-index="0" onclick="revealNextImageWithDelay(this)">
+      <img src="image2.jpg" alt="December 2, 2023" data-index="1" onclick="revealNextImageWithDelay(this)" style="display: none;">
+      <img src="image3.jpg" alt="February 16, 2024" data-index="2" onclick="revealNextImageWithDelay(this)" style="display: none;">
+      <img src="image4.jpg" alt="April 26, 2024" data-index="3" onclick="revealNextImageWithDelay(this)" style="display: none;">
+      <img src="image5.jpg" alt="May 15, 2024" data-index="4" onclick="revealNextImageWithDelay(this)" style="display: none;">
+      <img src="image6.jpg" alt="July 17, 2024" data-index="5" onclick="revealNextImageWithDelay(this)" style="display: none;">
+      <img src="image7.jpg" alt="November 18, 2024" data-index="6" onclick="revealNextImageWithDelay(this)" style="display: none;">
+      <img src="image8.jpg" alt="November 19, 2024" data-index="7" onclick="revealNextImageWithDelay(this)" style="display: none;">
+      <img src="image9.jpg" alt="December 4, 2024" data-index="8" onclick="revealNextImageWithDelay(this)" style="display: none;">
+      <img src="image10.jpg" alt="December 14, 2024" data-index="9" onclick="revealNextImageWithDelay(this)" style="display: none;">
+      <img src="image11.jpg" alt="January 25, 2025" data-index="10" onclick="revealNextImageWithDelay(this)" style="display: none;">
+      <img src="image12.jpg" alt="April 23, 2025" data-index="11" onclick="revealNextImageWithDelay(this)" style="display: none;">
+      <img src="image13.jpg" alt="?" data-index="12" onclick="revealNextImageWithDelay(this)" style="display: none;">
+    </div>
+    
+
+    <div class="note-section">
+      <div class="note" onclick="toggleNote(this)">
+        <div class="note-front">💌</div>
+        <div class="note-back">Ano'ng TV show ang pinapanood ng mga bibi?</div>
+      </div>
+      <div class="note" onclick="toggleNote(this)">
+        <div class="note-front">💌</div>
+        <div class="note-back">Eh 'di... DUCKUMENTARIES!</div>
+      </div>
+      <div class="note" onclick="toggleNote(this)">
+        <div class="note-front">💌</div>
+        <div class="note-back">
+          <img src="imagenote.png" alt="Special Memory" style="width: 100%; height: auto; border-radius: 8px;">
+        </div>
+      </div>
+    </div>
+      
+    
+  </div>
+
+  <canvas id="confetti-canvas"></canvas>
+
+  <div class="text-panel" id="textPanel">
+    <span class="close-btn" onclick="closeTextPanel()">✖</span>
+    <h2 id="textTitle"></h2>
+    <p id="textContent"></p>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="hearts.js"></script>
+</body>
+</html>
